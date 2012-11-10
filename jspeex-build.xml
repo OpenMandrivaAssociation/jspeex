@@ -1,0 +1,12 @@
+--- build.xml	2005-05-27 15:24:20.000000000 +0200
++++ build.xml	2006-04-06 16:56:28.000000000 +0200
+@@ -88,6 +88,9 @@
+         <fileset dir="${lib}">
+           <include name="**/*.jar"/>
+         </fileset>
++        <fileset dir="/usr/share/java">
++          <include name="junit.jar"/>
++        </fileset>
+       </classpath>
+       <include name="*.java"/>
+       <include name="org/xiph/speex/**/*.java"/>
