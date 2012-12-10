@@ -1,6 +1,6 @@
 Name:           jspeex
 Version:        0.9.7
-Release:        %mkrel 0.0.3
+Release:        %mkrel 0.0.4
 Summary:        100% Java Speex encoder/decoder/converter library
 License:        BSD
 Url:            http://jspeex.sourceforge.net/
@@ -17,7 +17,6 @@ BuildRequires:	xml-commons-apis
 BuildRequires:	xml-commons-resolver
 Requires:       java >= 1.5
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 JSpeex is a Java port of the Speex speech codec (Open Source/Free Software
@@ -56,7 +55,7 @@ popd
 
 # javadoc
 %__install -dm 755 %{buildroot}%{_javadocdir}/%{name}-%{version}
-%__cp -pr doc/javadoc/* \
+cp -pr doc/javadoc/* \
 	%{buildroot}%{_javadocdir}/%{name}-%{version}
 ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name} 
 
@@ -88,4 +87,20 @@ EOF
 %defattr(-,root,root)
 %doc %{_javadocdir}/%{name}-%{version}
 %doc %{_javadocdir}/%{name}
+
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.9.7-0.0.3mdv2011.0
++ Revision: 619844
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.9.7-0.0.2mdv2010.0
++ Revision: 429649
+- rebuild
+
+* Mon Sep 22 2008 Alexander Kurtakov <akurtakov@mandriva.org> 0.9.7-0.0.1mdv2009.0
++ Revision: 286739
+- import jspeex
+
 
