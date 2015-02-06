@@ -1,6 +1,6 @@
 Name:           jspeex
 Version:        0.9.7
-Release:        %mkrel 0.0.4
+Release:        0.0.5
 Summary:        100% Java Speex encoder/decoder/converter library
 License:        BSD
 Url:            http://jspeex.sourceforge.net/
