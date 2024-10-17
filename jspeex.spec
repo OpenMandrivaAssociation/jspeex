@@ -3,7 +3,7 @@ Version:        0.9.7
 Release:        0.0.5
 Summary:        100% Java Speex encoder/decoder/converter library
 License:        BSD
-Url:            http://jspeex.sourceforge.net/
+Url:            https://jspeex.sourceforge.net/
 Group:          Development/Java
 Source0:        %{name}-%{version}.tar.bz2
 Patch:          %{name}-build.xml
